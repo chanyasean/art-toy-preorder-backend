@@ -81,6 +81,10 @@ const swaggerOptions = {
       {
         url: `http://localhost:${process.env.PORT || 5000}/api/v1`,
         description: 'Development server'
+      },
+      {
+        url: `https://${process.env.FRONTEND_URL}/api/v1`,
+        description: "Production"
       }
     ],
     components: {
