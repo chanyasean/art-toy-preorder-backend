@@ -83,7 +83,7 @@ const swaggerOptions = {
         description: 'Development server'
       },
       {
-        url: `https://${process.env.FRONTEND_URL}/api/v1`,
+        url: `${process.env.BACKEND_URL}/api/v1`,
         description: "Production"
       }
     ],
@@ -167,7 +167,7 @@ process.on("unhandledRejection", (err, promise) => {
 });
 
 // Handle uncaught exceptions
-process.on("uncaughtException", (err) => {
+process.on("uncaughtException", (err) => {g
   console.log(`Error: ${err.message}`);
   process.exit(1);
 });
